@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
@@ -65,27 +66,27 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
 
         <p class="advantages-title">Седона - небольшой городое в Аризоне, заслуживающий большего!</p>
-        <p class="advantages-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
         <ul class="advantages-list">
 
           <li class="advantages-item advantages-item-big">
-            <h3 class="advantage-title">Настоящий городок</h3>
-            <p class="advantage-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="advantages-subtitle">Настоящий городок</h3>
+            <p class="advantages-subdescription">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantage-img" src="images/reason-1.jpg" alt="Дома в Седоне">
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item advantages-light">
             <h3 class="advantage-title">Небольшая площадь</h3>
             <p class="advantage-description">Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item advantages-dark">
             <h3 class="advantage-title">Красивая дорога</h3>
             <p class="advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item advantages-light">
             <h3 class="advantage-title">Мало туристов</h3>
             <p class="advantage-description">Большинство едет в Гранд-Каньон и толпится там</p>
           </li>
@@ -100,23 +101,23 @@
       </section>
 
       <section>
-        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p class="reasons">Опытный персонал и качественное обслуживание!</p>
+        <h2 class="reasons-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="reasons-description">Опытный персонал и качественное обслуживание!</p>
         <ul class="reasons-list">
 
-          <li class="reasons-item">
-            <h3 class="reasons-title">Жилье</h3>
-            <p class="reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <li class="reasons-item reasons-item-light">
+            <h3 class="reason-title">Жилье</h3>
+            <p class="reason-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
 
           <li class="reasons-item">
-            <h3 class="reasons-title">Еда</h3>
-            <p class="reasons-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <h3 class="reason-title">Еда</h3>
+            <p class="reason-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
 
-          <li class="reasons-item">
-            <h3 class="reasons-title">Сувениры</h3>
-            <p class="reasons-description">Не только китайского, но и настоящего местного производства!</p>
+          <li class="reasons-item reasons-item-light">
+            <h3 class="reason-title">Сувениры</h3>
+            <p class="reason-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
 
         </ul>
@@ -125,7 +126,7 @@
       <section class="search" data-test="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" class="search-link">Поиск гостиницы в Седоне</a>
+        <a href="#" class="navigation-btn-link">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscribe" data-test="subscribe">
@@ -133,7 +134,7 @@
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Укажите ваш email</label>
-          <input type="text" id="subscribe-email" name="user-email" placeholder="Ваш email"></input>
+          <input type="text" id="subscribe-email" name="user-email" placeholder="Ваш e-mail"></input>
           <button class="subscribe-btn" type="submit">Подписаться</button>
         </form>
 
@@ -166,7 +167,8 @@
       <a class="contact" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
       <a class="academy-logo-link" href="https://htmlacademy.ru/">
-        <img class="academy-logo" src="images/academy-logo.svg" width="115" height="33" alt="Логотип HTML академии">
+        <!-- <img class="academy-logo" src="images/academy-logo.svg" width="115" height="33" alt="Логотип HTML академии"> -->
+        <span class="visually-hidden">Сайт HTMLAcademy</span>
       </a>
     </footer>
 
