@@ -146,16 +146,26 @@
                             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
                             <div class="from-to-wrapper">
-                            <label class="from" for="from-amount">
-                                <input class="form-from" type="number" name="from-amount" min="0" max="9999" value="0" required>
-                            </label>
+                                <label class="from" for="from-amount">
+                                    <input class="form-from" type="number" name="from-amount" min="0" max="9999" value="0" required>
+                                </label>
 
-                            <label class="to" for="to-amount">
-                                <input class="form-to" type="number" name="to-amount" min="1" max="10000" value="9000" required>
-                            </label>
+                                <label class="to" for="to-amount">
+                                    <input class="form-to" type="number" name="to-amount" min="1" max="10000" value="9000" required>
+                                </label>
                             </div>
 
-                            <input class="range-amount" type="range" name="range-amount" min="0" max="9000">
+                            <div class="range-scale">
+                                <div class="range-bar" style="left: 0; width: 210px;">
+                                    <button type="button" class="range-toggle toggle-min">
+                                        <span class="visually-hidden">От</span>
+                                    </button>
+                                    <button type="button" class="range-toggle toggle-max">
+                                        <span class="visually-hidden">До</span>
+                                    </button>
+                                </div>
+                            </div>
+
                         </fieldset>
                         <div class="button-wrapper">
                             <button class="filter-button filter-button-active" type="submit">Применить</button>
@@ -168,7 +178,9 @@
 
 
             <section class="catalog" data-test="catalog">
-                <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+                <h2 class="catalog-title">Найдено гостиниц:
+                    <b class="catalog-title-quantity">38</b>
+                </h2>
 
                 <select class="catalog-select">
                     <option value="cheap">Сначала дешевые</option>
@@ -206,13 +218,13 @@
                             <h3 class="catalog-card-title">Amara Resort & Spa</h3>
                         </a>
                         <p class="card-description">Гостиница</p>
-                        <p class="card-price">От 4000 ₽</p>
+                        <p class="card-price">От <span class="card-price-quantity">4000</span> ₽</p>
                         <a class="card-button card-more" href="#">Подробнее</a>
                         <button class="card-button favourite-card">В избранное</button>
                         <p class="stars four-stars">
                             <span class="visually-hidden">Отель 4 звезды</span>
                         </p>
-                        <p class="card-button card-rating">Рейтинг: 8,5</p>
+                        <p class="card-button card-rating">Рейтинг: <span class="card-rating-quantity">8,5</span></p>
                     </li>
 
                     <li class="catalog-item">
@@ -223,13 +235,13 @@
                             <h3 class="catalog-card-title">Villias at Poco Diablo</h3>
                         </a>
                         <p class="card-description">Гостиница</p>
-                        <p class="card-price">От 5000 ₽</p>
+                        <p class="card-price">От <span class="card-price-quantity">5000</span> ₽</p>
                         <a class="card-button card-more" href="#">Подробнее</a>
                         <button class="card-button favourite-card favourite-card-active">В избранном</button>
                         <p class="stars four-stars">
                             <span class="visually-hidden">Отель 4 звезды</span>
                         </p>
-                        <p class="card-button card-rating">Рейтинг: 9,2</p>
+                        <p class="card-button card-rating">Рейтинг: <span class="card-rating-quantity">9,2</span></p>
                     </li>
 
                     <li class="catalog-item">
@@ -240,13 +252,13 @@
                             <h3 class="catalog-card-title">Desert Quail Inn</h3>
                         </a>
                         <p class="card-description">Гостиница</p>
-                        <p class="card-price">От 2500 ₽</p>
+                        <p class="card-price">От <span class="card-price-quantity">2500</span> ₽</p>
                         <a class="card-button card-more" href="#">Подробнее</a>
                         <button class="card-button favourite-card">В избранное</button>
-                        <p class="stars four-stars">
+                        <p class="stars three-stars">
                             <span class="visually-hidden">Отель 3 звезды</span>
                         </p>
-                        <p class="card-button card-rating">Рейтинг: 6,9</p>
+                        <p class="card-button card-rating">Рейтинг: <span class="card-rating-quantity">6,9</span></p>
                     </li>
 
                     <li class="catalog-item">
@@ -257,13 +269,13 @@
                             <h3 class="catalog-card-title">GreenTree Inn</h3>
                         </a>
                         <p class="card-description">Гостиница</p>
-                        <p class="card-price">От 1500 ₽</p>
+                        <p class="card-price">От <span class="card-price-quantity">1500</span> ₽</p>
                         <a class="card-button card-more" href="#">Подробнее</a>
                         <button class="card-button favourite-card">В избранное</button>
-                        <p class="stars four-stars">
+                        <p class="stars two-stars">
                             <span class="visually-hidden">Отель 2 звезды</span>
                         </p>
-                        <p class="card-button card-rating">Рейтинг: 5</p>
+                        <p class="card-button card-rating">Рейтинг: <span class="card-rating-quantity">5</span></p>
                     </li>
                 </ul>
 
@@ -330,7 +342,7 @@
 
                 <li class="social-item">
                     <a class="social-link yt" href="https://vk.com/htmlacademy">
-                        <span class="visually-hidden">Youtube</span>
+                        <span class="visually-hidden">YouTube</span>
                     </a>
                 </li>
             </ul>

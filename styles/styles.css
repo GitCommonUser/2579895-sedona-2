@@ -1095,6 +1095,7 @@ footer {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
+
 }
 
 .range-toggle {
@@ -1255,6 +1256,8 @@ footer {
   -moz-appearance: none;
   appearance: none;
   background: right 20px center url("../images/select-arrow.svg") no-repeat;
+
+  cursor: pointer;
 }
 
 .catalog-select:hover {
@@ -1425,7 +1428,7 @@ footer {
   border-radius: 4px;
   background: #82b3d3;
   color: #ffffff;
-  padding: 8px;
+  padding: 8px 6px;
 }
 
 .card-button:hover {
@@ -1523,6 +1526,27 @@ footer {
   background: #f2f2f2;
   color: #333333;
 }
+
+.stars {
+  padding: 0;
+  margin: 0;
+}
+
+.four-stars {
+  background: url("../images/star-4.svg") no-repeat;
+  background-size:contain;
+}
+
+.three-stars {
+  background: url("../images/star-3.svg") no-repeat;
+  background-size: contain;
+}
+
+.two-stars {
+  background: url("../images/star-2.svg") no-repeat;
+  background-size: contain;
+}
+
 
 
 .pagination {
@@ -1640,20 +1664,20 @@ footer {
   border: none;
   outline: none;
   border-radius: 50%;
-  background: 50% url("../img/svg/cross.svg") no-repeat, #f2f2f2;
+  background: 50% url("../images/cross.svg") no-repeat, #f2f2f2;
 }
 
 .modal-button:hover {
-  background: 50% url("../img/svg/cross.svg") no-repeat, #e6e6e6;
+  background: 50% url("../images/cross.svg") no-repeat, #e6e6e6;
 }
 
 .modal-button:focus {
-  background: 50% url("../img/svg/cross.svg") no-repeat, #e6e6e6;
+  background: 50% url("../images/cross.svg") no-repeat, #e6e6e6;
   outline: 3px solid #83B3D3;
 }
 
 .modal-button:active {
-  background: 50% url("../img/svg/cross.svg") no-repeat, #e6e6e6;
+  background: 50% url("../images/cross.svg") no-repeat, #e6e6e6;
   opacity: 0.5;
   outline: none;
 }
@@ -1702,11 +1726,13 @@ footer {
   margin-left: 10px;
   width: 26px;
   height: 26px;
+
+  background: url("../images/notice.svg") no-repeat;
 }
 
 .tooltip-toggle {
   border: none;
-  background-color: transparent;
+
   height: 26px;
   padding: 0;
   margin: 0;
@@ -1746,13 +1772,15 @@ footer {
   height: 9px;
   top: -9px;
   left: 121px;
-  background: url("../img/svg/triangle.svg") no-repeat;
+  background: url("../images/triangle.svg") no-repeat;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
+
+
 
 .button-wrapper {
   position: relative;
@@ -1762,7 +1790,7 @@ footer {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: center url("../img/svg/plus.svg") no-repeat;
+  background: center url("../images/plus.svg") no-repeat;
   top: 14px;
   right: 10px;
   border: none;
@@ -1788,7 +1816,7 @@ footer {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: center url("../img/svg/minus.svg") no-repeat;
+  background: center url("../images/minus.svg") no-repeat;
   top: 14px;
   left: 10px;
   border: none;
@@ -1827,6 +1855,25 @@ footer {
   -ms-flex-align: baseline;
   align-items: baseline;
   margin-bottom: 5px;
+
+  position: relative;
+}
+
+.calendar-button {
+  position: absolute;
+  right: 15px;
+
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+
+
+  border: none;
+  cursor: pointer;
+
+  background: url("../images/date.svg") no-repeat center center;
+  background-size: contain;
 }
 
 .tip {
@@ -1838,11 +1885,11 @@ footer {
   margin-bottom: 23px;
 }
 
-.mistake {
+.warning {
   color: #ff5757;
 }
 
-.fine {
+.notice {
   color: #333333;
 }
 
@@ -1888,7 +1935,7 @@ footer {
   opacity: 0.6;
 }
 
-.qt-ty-wrapper {
+.people-count-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1914,7 +1961,7 @@ footer {
   gap: 46px;
 }
 
-.q-ty-form {
+.people-count-form {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;

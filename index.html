@@ -168,7 +168,7 @@
 
         <li class="social-item">
           <a class="social-link yt" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Youtube</span>
+            <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
@@ -179,6 +179,87 @@
         <span class="visually-hidden">Сайт HTMLAcademy</span>
       </a>
     </footer>
+
+
+
+
+
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button type="button" class="modal-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+
+          <h2 class="modal-content-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="date-wrapper">
+              <label class="date-form">
+                Дата Заезда:
+                <input class="form-typefield" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020" required>
+                <button type="button" class="calendar-button"></button>
+
+              </label>
+              <p class="tip warning">Мы не можем отправить вас в прошлое.</p>
+              <label class="date-form">
+                Дата Выезда:
+                <input class="form-typefield" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2023" required>
+                <button type="button" class="calendar-button"></button>
+
+              </label>
+              <p class="tip notice">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+
+            <div class="people-count-wrapper">
+
+              <div class="adults-wrapper">
+                <label for="adults" class="people-count-form">Взрослые:</label>
+                <div class="button-wrapper">
+                  <button type="button" class="minus">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input id="adults" class="form-number adults" type="number" name="adults" min="0" max="10" placeholder="2"
+                    required>
+                  <button type="button" class="plus">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="children-wrapper">
+
+                <div class="children-tooltip">
+
+                  <label for="children" class="people-count-form">Дети:</label>
+                  <span class="tooltip">
+                    <button type="button" class="tooltip-toggle" aria-labelledby="tooltip-label-info">
+                      <img class="tooltip-icon" src="images/notice.svg" alt="Справка о размещении детей." height="20" width="20">
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-info">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
+                    </span>
+                  </span>
+
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="minus">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input id="children" class="form-number children" type="number" name="children" min="0" max="10"
+                    placeholder="2">
+                  <button type="button" class="plus">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <button type="submit" class="form-submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
     </div>
   </body>
 </html>
